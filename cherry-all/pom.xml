@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jasper.cherry</groupId>
+    <artifactId>cherry-all</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <description>基于领域驱动开发的ERP项目实战</description>
+    <inceptionYear>2023</inceptionYear>
+    <url>https://github.com/JasperZhan/cherry</url>
+
+    <developers>
+        <developer>
+            <name>JasperZhan</name>
+            <email>zhanhanjie123@163.com</email>
+            <url>https://github.com/JasperZhan</url>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>../cherry-dependencies</module>
+        <module>../cherry-bom</module>
+        <module>../cherry-parent</module>
+    </modules>
+
+    <properties>
+        <!-- 项目版本 -->
+        <revision>1.0.0-SNAPSHOT</revision>
+
+        <java.version>8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
